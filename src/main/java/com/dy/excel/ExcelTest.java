@@ -34,7 +34,7 @@ public class ExcelTest {
 //				.setFontColor(HSSFColor.GREEN.index).setColNum(5).setHeight((short) 1000).setRowNum(2)
 //				.setBoldweight(HSSFFont.BOLDWEIGHT_BOLD).setWrapText(true) });
 		ExcelCell[] excelCells = new ExcelCell[17];
-		excelCells[0] = new ExcelCell().setRowNum(2);
+		excelCells[0] = new ExcelCell().setRowNum(2).setText("测试");
 		excelCells[1] = new ExcelCell().setText("星期一").setAlignment(HSSFCellStyle.ALIGN_CENTER)
 				.setVerticalAlignment(HSSFCellStyle.VERTICAL_CENTER).setFontColor(HSSFColor.GREEN.index).setColNum(8)
 				.setHeight((short) 600).setBoldweight(HSSFFont.BOLDWEIGHT_BOLD).setWrapText(true);
@@ -75,7 +75,7 @@ public class ExcelTest {
 						.setWrapText(true);			
 			data.add(cells);
 		}
-		String filePath = "D:/122213.xlsx";
+		String filePath = "D:/122213.xls";
 		File file = new File(filePath);
 		if (!file.exists()) {
 			file.setWritable(true, false);// 获取权限
