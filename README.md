@@ -1,0 +1,1 @@
+C:\Users\Administrator\Desktop\mm_facetoface_collect_qrcode_1575943727761.png
